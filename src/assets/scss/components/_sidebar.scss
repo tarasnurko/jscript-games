@@ -1,0 +1,33 @@
+.sidebar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #FFB540;
+  &-title {
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+  }
+  &__links {
+    &-container {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-item {
+      margin-top: 8px;
+      color: #000;
+      font-size: 18px;
+      font-weight: 400;
+      transition: .6s all;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

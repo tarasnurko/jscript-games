@@ -1,0 +1,23 @@
+.promo {
+  &-title {
+    margin-top: 60px;
+    text-align: center;
+    color: #000;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+  }
+  &-subtitle {
+    text-align: center;
+    color: rgb(85, 85, 85);
+    font-size: 12px;
+    font-weight: 300;
+  }
+  &-descr {
+    padding: 40px 0 0 40px;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
