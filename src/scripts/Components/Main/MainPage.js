@@ -1,13 +1,13 @@
-import { Main } from "../Main/Main";
+import { Page } from "../Page/Page";
 
-export class Promo extends Main {
-  constructor(root) {
-    super(root);
+export class MainPage extends Page {
+  constructor(root, pageName) {
+    super(root, pageName);
   }
 
   render() {
     const html = `
-      <div class="page promo">
+      <div data-active-page="main" class="page promo">
         <div class="container">
           <h1 class="promo-title">Tosik's game project</h1>
           <div class="promo-subtitle">Here you can play different games I made!</div>

@@ -1,6 +1,7 @@
-export class Main {
-  constructor(root) {
+export class Page {
+  constructor(root, pageName) {
     this.root = root;
+    this.pageName = pageName;
   }
 
   pageClearHandler() {

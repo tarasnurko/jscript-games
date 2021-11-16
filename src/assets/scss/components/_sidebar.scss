@@ -28,6 +28,15 @@
       &:hover {
         color: #fff;
       }
+      &_active {
+        color: #fff;
+        background-color: #000;
+        padding: 6px 16px;
+        border-radius: 6px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
 }
