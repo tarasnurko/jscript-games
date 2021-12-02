@@ -6,6 +6,7 @@
   width: 200px;
   height: 100vh;
   background-color: #FFB540;
+  box-shadow: 6px 0px 12px 0px rgba(34, 60, 80, 0.2);
   &-title {
     margin-top: 30px;
     font-size: 30px;
@@ -37,6 +38,30 @@
           text-decoration: none;
         }
       }
+    }
+  }
+  &__clock {
+    &-container {
+      position: absolute;
+      display: flex;
+      bottom: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      margin-top: 50px;
+      justify-content: center;
+    }
+  }
+  &__date {
+    &-container {
+      position: absolute;
+      display: flex;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      margin-top: 50px;
+      justify-content: center;
     }
   }
 }

@@ -6,7 +6,7 @@ function cycleArray(array) {
   });
 }
 
-export function routing(buttonBlock, attr, array) {
+export function routing(buttonBlock, attr, array, activeClass) {
   cycleArray(array);
   
   buttonBlock.addEventListener('click', (event) => {
@@ -24,6 +24,12 @@ export function routing(buttonBlock, attr, array) {
       });
 
       window.location.hash = event.target.getAttribute(attr);
+
+      Array.from(element.parentElement.children).forEach(elem => {
+        elem.classList.remove(activeClass);
+      })
+
+      element.classList.add(activeClass)
 
       cycleArray(array);
     }
