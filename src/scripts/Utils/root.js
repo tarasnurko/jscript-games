@@ -4,4 +4,4 @@ const ROOT_SIDEBAR = document.querySelector('#sidebar'),
 export const ROOTObj = {
   sidebar: ROOT_SIDEBAR,
   main: ROOT_MAIN
-}
+};

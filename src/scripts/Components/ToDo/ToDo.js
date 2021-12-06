@@ -174,7 +174,6 @@ export class ToDo extends Page {
 
         if (wantDeleate) {
           storrageArr.splice(index, 1);
-          console.log(storrageArr);
           localStorage.setItem(this.todoLocalStorageName, JSON.stringify(storrageArr));
           this.render(this.getFromLocalStorage());
         }
