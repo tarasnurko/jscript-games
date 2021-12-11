@@ -133,7 +133,6 @@ export class Sidebar extends Page{
     let storragePage = localStorage.getItem(this.storragePageName);
   
     if (storragePage !== null) {
-      console.log(storragePage)
       return JSON.parse(storragePage);
     }
     return 'main';
