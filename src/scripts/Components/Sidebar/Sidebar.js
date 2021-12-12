@@ -25,7 +25,7 @@ export class Sidebar extends Page{
           <a href="#" data-page-name="todo" class="sidebar__links-item">ToDo</a>
 
           <a href="#" data-page-name="calculator" class="sidebar__links-item">Calculator</a>
-          <a href="#" data-page-name="fourth" class="sidebar__links-item">Text</a>
+          <a href="#" data-page-name="dogs" class="sidebar__links-item">Dogs</a>
 
         </div>
 

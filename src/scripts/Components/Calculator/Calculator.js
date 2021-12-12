@@ -109,10 +109,13 @@ export class Calculator extends Page {
 
   equal(input) {
     let val = input.value;
-    try {
-      input.value = eval(val);
-    } catch(e) {
-      input.value = this.errorMessage;
+
+    if (val.length !== 0) {
+      try {
+        input.value = eval(val);
+      } catch(e) {
+        input.value = this.errorMessage;
+      }
     }
   }
 }
