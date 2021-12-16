@@ -5,6 +5,7 @@ import { ToDo } from "./scripts/Components/ToDo/ToDo";
 import './assets/scss/style';
 import { Calculator } from "./scripts/Components/Calculator/Calculator";
 import { Dogs } from "./scripts/Components/Dogs/Dogs";
+import { Password } from "./scripts/Components/Password/Password";
 
 
 // window.location.hash = "main";
@@ -12,9 +13,10 @@ import { Dogs } from "./scripts/Components/Dogs/Dogs";
 const mainPage = new MainPage(ROOTObj.main, 'main');
 const todoPage = new ToDo(ROOTObj.main, 'todo');
 const calculatorPage = new Calculator(ROOTObj.main, 'calculator');
-const dogsPage = new Dogs(ROOTObj.main, 'dogs')
+const dogsPage = new Dogs(ROOTObj.main, 'dogs');
+const password = new Password(ROOTObj.main, 'password');
 
-const pagesName = [mainPage, todoPage, calculatorPage, dogsPage];
+const pagesName = [mainPage, todoPage, calculatorPage, dogsPage, password];
 
 const sidebar = new Sidebar(ROOTObj.sidebar, 'sidebar', pagesName);
 

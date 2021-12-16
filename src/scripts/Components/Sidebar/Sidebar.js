@@ -16,7 +16,7 @@ export class Sidebar extends Page{
   render() {
     const html = `
       <div class="sidebar">
-        <div class="sidebar-title">Sidebar</div>
+        <div class="sidebar-title">Menu</div>
 
         <div class="sidebar__links-container">
 
@@ -26,6 +26,8 @@ export class Sidebar extends Page{
 
           <a href="#" data-page-name="calculator" class="sidebar__links-item">Calculator</a>
           <a href="#" data-page-name="dogs" class="sidebar__links-item">Dogs</a>
+
+          <a href="#" data-page-name="password" class="sidebar__links-item">Password</a>
 
         </div>
 
@@ -71,7 +73,7 @@ export class Sidebar extends Page{
         if (item.getAttribute(this.routeAttr) !== window.location.hash.slice(1)) {
           this.pagesName.forEach(a => a.pageClearHandler());
 
-          buttons.forEach(a => a.classList.remove(this.btnActiveClass))
+          buttons.forEach(a => a.classList.remove(this.btnActiveClass));
           
           window.location.hash = item.getAttribute(this.routeAttr);
 
