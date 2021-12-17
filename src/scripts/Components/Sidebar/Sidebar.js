@@ -28,6 +28,7 @@ export class Sidebar extends Page{
           <a href="#" data-page-name="dogs" class="sidebar__links-item">Dogs</a>
 
           <a href="#" data-page-name="password" class="sidebar__links-item">Password</a>
+          <a href="#" data-page-name="randnum" class="sidebar__links-item">Random number</a>
 
         </div>
 

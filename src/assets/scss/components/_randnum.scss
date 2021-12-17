@@ -1,0 +1,77 @@
+.randnum {
+  &__choose {
+    &-wrapper {
+      margin: 50px auto 0 auto;
+      max-width: 600px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-item {
+      display: flex;
+      &:last-child {
+        margin-top: 10px;
+      }
+    }
+    &-text {
+      margin-right: 20px;
+      font-size: 18px;
+    }
+    &-select {
+      border-radius: 6px;
+      padding: 2px;
+    }
+  }
+  &__btn {
+    &-item {
+      margin-right: 40px;
+      padding: 8px 18px;
+      border-radius: 8px;
+      background-color: rgb(60, 178, 214);
+      color: #000;
+      transition: all .6s;
+      &:hover {
+        background-color: #FFB540;;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__graph {
+    &-wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin: 65px auto 0 auto;
+      width: 90%;
+      height: 370px;
+    }
+    &-item {
+      position: relative;
+      width: 24px;
+      height: 0;
+      background-color: red;
+      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      opacity: 0.3;
+      transition: all 1s ease-out;
+    }
+    &-num {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &-amount {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

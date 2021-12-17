@@ -6,6 +6,7 @@ import './assets/scss/style';
 import { Calculator } from "./scripts/Components/Calculator/Calculator";
 import { Dogs } from "./scripts/Components/Dogs/Dogs";
 import { Password } from "./scripts/Components/Password/Password";
+import { RandNumGraph } from "./scripts/Components/RandNumGraph/RandNumGraph";
 
 
 // window.location.hash = "main";
@@ -15,8 +16,9 @@ const todoPage = new ToDo(ROOTObj.main, 'todo');
 const calculatorPage = new Calculator(ROOTObj.main, 'calculator');
 const dogsPage = new Dogs(ROOTObj.main, 'dogs');
 const password = new Password(ROOTObj.main, 'password');
+const randNumGraphPage = new RandNumGraph(ROOTObj.main, 'randnum');
 
-const pagesName = [mainPage, todoPage, calculatorPage, dogsPage, password];
+const pagesName = [mainPage, todoPage, calculatorPage, dogsPage, password, randNumGraphPage];
 
 const sidebar = new Sidebar(ROOTObj.sidebar, 'sidebar', pagesName);
 
