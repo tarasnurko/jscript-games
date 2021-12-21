@@ -25,10 +25,14 @@ export class Sidebar extends Page{
           <a href="#" data-page-name="todo" class="sidebar__links-item">ToDo</a>
 
           <a href="#" data-page-name="calculator" class="sidebar__links-item">Calculator</a>
+
           <a href="#" data-page-name="dogs" class="sidebar__links-item">Dogs</a>
 
           <a href="#" data-page-name="password" class="sidebar__links-item">Password</a>
+
           <a href="#" data-page-name="randnum" class="sidebar__links-item">Random number</a>
+
+          <a href="#" data-page-name="tictactoe" class="sidebar__links-item">Tic-Tac-Toe</a>
 
         </div>
 
