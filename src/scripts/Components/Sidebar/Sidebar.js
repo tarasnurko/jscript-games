@@ -6,11 +6,15 @@ export class Sidebar extends Page{
     super(root, pageName);
     this.storragePageName = 'page';
     this.pagesName = pagesName;
+    this.sidebarSelector = '.sidebar';
     this.clockContainerSelector = '.sidebar__clock-container';
     this.dateContainerSelector = '.sidebar__date-container';
     this.buttonBlock = ROOTObj.sidebar;
     this.btnActiveClass = 'sidebar__links-item_active';
     this.routeAttr = 'data-page-name';
+    this.menuBtnSelector = '.menu-btn';
+    this.menuBtnActiveClass = 'menu-btn_active';
+    this.sidebarAdaptClass = 'sidebar_adaptive';
   }
 
   render() {
@@ -44,6 +48,10 @@ export class Sidebar extends Page{
 
         </div>
       </div>
+
+      <div class="menu-btn">
+        <span></span>
+      </div>
     `;
 
     this.root.innerHTML = html;
@@ -55,6 +63,8 @@ export class Sidebar extends Page{
     this.routing();
 
     this.rememberPage();
+
+    this.adaptiveMenuBtn();
   }
 
   routing() {
@@ -159,9 +169,39 @@ export class Sidebar extends Page{
       }
     });
   }
+
   rememberPage() {
     window.addEventListener('hashchange', () => {
       localStorage.setItem(this.storragePageName, JSON.stringify(window.location.hash.slice(1)));
     });
+  }
+
+  adaptiveMenuBtn() {
+    const menuBtn = document.querySelector(this.menuBtnSelector),
+          sidebar = document.querySelector(this.sidebarSelector);
+    
+    menuBtn.addEventListener('click', () => {
+      if (!menuBtn.classList.contains(this.menuBtnActiveClass)) {
+
+        menuBtn.classList.add(this.menuBtnActiveClass);
+        sidebar.style.left = '0';
+        sidebar.style.opacity = '1';
+        
+
+      } else {
+        menuBtn.classList.remove(this.menuBtnActiveClass);
+
+        sidebar.style.left = '-100%';
+        sidebar.style.opacity = '0';
+      }
+    });
+
+    window.addEventListener('hashchange', () => {
+      menuBtn.classList.remove(this.menuBtnActiveClass);
+
+      sidebar.style.left = '-100%';
+      sidebar.style.opacity = '0';
+    });
+
   }
 }

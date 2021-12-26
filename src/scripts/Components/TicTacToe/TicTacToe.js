@@ -15,7 +15,7 @@ export class TicTacToe extends Page {
   render() {
     const html = `
       <div class="page tictactoe">
-        <div class="container container_cover-bg">
+        <div class="container">
           <h2 class="title tictactoe-title">Tic-Tac-Toe</h2>
           <div class="subtitle tictactoe-subtitle">Enjoy playing Tic-Tac-Toe with your friend</div>
 
@@ -106,7 +106,7 @@ export class TicTacToe extends Page {
     let boxes = document.querySelectorAll(`.${this.boxClass}`);
 
     if (boxes[0].innerHTML != '' && boxes[1].innerHTML != '' && boxes[2].innerHTML != '' &&  boxes[3].innerHTML != '' && boxes[4].innerHTML != '' && boxes[5].innerHTML != '' && boxes[6].innerHTML != '' && boxes[7].innerHTML != '' && boxes[8].innerHTML != '') {
-      this.prepareResult('Draw')
+      this.prepareResult('Draw');
     }
   }
 

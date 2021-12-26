@@ -17,7 +17,7 @@ export class Password extends Page {
 
         <div class="password__modal-copied">Password copied</div>
 
-        <div class="container container_cover-bg">
+        <div class="container">
           <h2 class="title password-title">Password generator</h2>
           <div class="subtitle password-subtitle">Use password generator to create safe password</div>
 

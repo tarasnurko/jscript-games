@@ -1,0 +1,130 @@
+@media(max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+  .container {
+      max-width: 720px;
+  }
+
+  .todo {
+    &-wrapper {
+      width: 500px;
+    }
+    &-input {
+      width: 425px;
+    }
+    &__list {
+      &-container {
+        width: 500px;
+      }
+    }
+  }
+  .randnum {
+    .container {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      max-width: 540px;
+  }
+  .page {
+    margin-left: 0;
+  }
+  .sidebar {
+    width: 100vw;
+    left: -100%;
+    box-shadow: none;
+  }
+  .menu-btn {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+      width: 100%;
+      padding: 0 10px;
+  }
+
+  .todo {
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 10px;
+    }
+    &-input {
+      width: 100%;
+    }
+    &-submit {
+      margin-top: 10px;
+      width: 100%;
+    }
+    &__list {
+      &-container {
+        width: 100%;
+        padding: 0 10px 90px 10px;
+      }
+    }
+  }
+
+  .calculator {
+    &-wrapper {
+      max-width: 280px;
+    }
+  }
+
+  .dog {
+    &__block {
+      &-wrapper {
+        width: 280px;
+      }
+      &-img {
+        img {
+          max-width: 280px;
+          max-height: 240px;
+        }
+      }
+      &-btn {
+        top: 70%;
+      }
+    }
+  }
+
+  .randnum {
+    &__choose {
+      &-wrapper {
+        flex-direction: column;
+      }
+    }
+    &__btn {
+      &-wrapper {
+        margin-top: 20px;
+      }
+      &-item {
+        margin-right: 0;
+      }
+    }
+    &__graph {
+      &-item {
+        width: 14px;
+      }
+    }
+  }
+
+  .tictactoe {
+    &__modal {
+      &-wrapper {
+        width: 300px;
+      }
+    }
+  }
+}

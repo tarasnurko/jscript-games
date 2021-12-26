@@ -12,7 +12,7 @@ export class Dogs extends Page {
     const html = `
     
     <div class="page dogs">
-      <div class="container container_cover-bg">
+      <div class="container">
         <h2 class="title dogs-title">Dog image</h2>
         <div class="subtitle dogs-subtitle">Random dog image works by Dog API (<a href="https://dog.ceo/">link</a>)</div>
         <div class="dog__block-wrapper">

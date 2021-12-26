@@ -9,12 +9,9 @@
 }
 
 .container {
-  max-width: 900px;
   margin: 0 auto;
-  &_cover-bg {
-    max-width: 100vw;
-    background-color: rgb(242, 242, 242);
-  }
+  max-width: 100vw;
+  background-color: rgb(242, 242, 242);
 }
 
 .page {
@@ -23,7 +20,7 @@
   margin-left: 200px;
 }
 .title {
-  padding-top: 40px;
+  padding-top: 60px;
   text-align: center;
   color: #000;
   font-size: 42px;
@@ -47,7 +44,9 @@
 @import 'components/promo';
 @import 'components/todo';
 @import 'components/calculator';
-@import 'components/dogs'; 
+@import 'components/dog'; 
 @import 'components/password';
 @import 'components/randnum';
 @import 'components/tictactoe';
+@import 'components/menu-btn';
+@import 'components/media';

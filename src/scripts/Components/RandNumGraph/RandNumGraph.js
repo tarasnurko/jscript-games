@@ -14,7 +14,7 @@ export class RandNumGraph extends Page {
   render () {
     const html = `
     <div class="page randnum">
-      <div class="container container_cover-bg">
+      <div class="container">
       
         <h2 class="title randnum-title">Random number</h2>
         <div class="subtitle randnum-subtitle">Random number generation diagram</div>
