@@ -9,9 +9,10 @@ export class MainPage extends Page {
     const html = `
       <div class="page promo">
         <div class="container">
-          <h1 class="title promo-title">Tosik's game project</h1>
-          <div class="subtitle promo-subtitle">Here you can play different games I made!</div>
-          <div class="descr promo-descr">Ther's my web application with different games. Here I use my knowledge to create some cool things. I will update this project to make it bigger.</div>
+          <h1 class="title promo-title">Tosik's pet projects</h1>
+          <div class="subtitle promo-subtitle">Here you can check my pet projects!</div>
+          <div class="descr promo-descr">Ther's my web application with different pet projects. Here I use my knowledge to create some cool things.</div>
+          <img src="assets/img/javacript.png" alt="">
         </div>
       </div>
     `;

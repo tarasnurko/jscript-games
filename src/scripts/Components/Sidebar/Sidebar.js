@@ -196,12 +196,13 @@ export class Sidebar extends Page{
       }
     });
 
-    window.addEventListener('hashchange', () => {
-      menuBtn.classList.remove(this.menuBtnActiveClass);
-
-      sidebar.style.left = '-100%';
-      sidebar.style.opacity = '0';
-    });
-
+    if (window.screen.width <= 768) {
+      window.addEventListener('hashchange', () => {
+        menuBtn.classList.remove(this.menuBtnActiveClass);
+  
+        sidebar.style.left = '-100%';
+        sidebar.style.opacity = '0';
+      });
+    }
   }
 }

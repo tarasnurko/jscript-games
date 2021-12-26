@@ -114,6 +114,9 @@
       }
     }
     &__graph {
+      &-wrapper {
+        height: 320px;
+      }
       &-item {
         width: 14px;
       }
